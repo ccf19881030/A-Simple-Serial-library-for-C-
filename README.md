@@ -19,7 +19,6 @@ A high-performance, complete and compact serial library for C++
 4、CSerialMFC
 
 具体见文章中的描述，摘录如下：
->>>>>>> e76b7e19639eb9ae17b466432851fc90176d595a
 The current implementation contains four different classes, which allhave their own purpose. The following three classes are available. 
 • CSerial is the base serial class, which provides awrapper around the Win32 API. It is a lot easier to use, because itcombines all relevant calls in one single class. It allows theprogrammer to mix overlapped and non-overlapped calls, providesreasonable default settings, better readability, etc, etc. 
 • CSerialEx adds an additional thread to the serialclass, which can be used to handle the serial events. This releasesthe main GUI thread from the serial burden. The main disadvantageof this class is that it introduces threading to your architecture,which might be hard for some people. 
