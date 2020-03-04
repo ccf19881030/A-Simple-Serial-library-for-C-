@@ -1,6 +1,7 @@
 # A-Simple-Serial-library-for-CPlusPlus
 A high-performance, complete and compact serial library for C++
 [https://www.codeproject.com/Articles/992/Serial-library-for-C](https://www.codeproject.com/Articles/992/Serial-library-for-C)
+<<<<<<< HEAD
 
 ## 本仓库来源于[CodeProjecct](https://www.codeproject.com)作者[Ramon de Klein](https://www.codeproject.com/script/Membership/View.aspx?mid=10041)的一篇关于C++串口库的文章，是17年前也就是2003年很老的一篇文章，使用C++的串口类实现和封装，有4个类(支持4种不同的应用场景)如下：
 [https://www.codeproject.com/Articles/992/Serial-library-for-C](https://www.codeproject.com/Articles/992/Serial-library-for-C)
@@ -11,6 +12,15 @@ A high-performance, complete and compact serial library for C++
 具体见文章中的描述
 
 ## 关于这4个类的描述，摘录如下：
+=======
+本仓库来源于[CodeProjecct](https://www.codeproject.com)的一篇关于C++串口库的文章，是17年前也就是2003年很老的一篇文章，使用C++的串口类实现和封装，有4个类(支持4种不同的应用场景)如下：
+1、CSerial
+2、CSerialEx
+3、CSerialWnd
+4、CSerialMFC
+
+具体见文章中的描述，摘录如下：
+>>>>>>> e76b7e19639eb9ae17b466432851fc90176d595a
 The current implementation contains four different classes, which allhave their own purpose. The following three classes are available. 
 • CSerial is the base serial class, which provides awrapper around the Win32 API. It is a lot easier to use, because itcombines all relevant calls in one single class. It allows theprogrammer to mix overlapped and non-overlapped calls, providesreasonable default settings, better readability, etc, etc. 
 • CSerialEx adds an additional thread to the serialclass, which can be used to handle the serial events. This releasesthe main GUI thread from the serial burden. The main disadvantageof this class is that it introduces threading to your architecture,which might be hard for some people. 
