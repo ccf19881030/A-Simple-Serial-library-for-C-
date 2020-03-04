@@ -11,14 +11,7 @@ A high-performance, complete and compact serial library for C++
 * 4、CSerialMFC
 具体见文章中的描述
 
-## 关于这4个类的描述，摘录如下：
-本仓库来源于[CodeProjecct](https://www.codeproject.com)的一篇关于C++串口库的文章，是17年前也就是2003年很老的一篇文章，使用C++的串口类实现和封装，有4个类(支持4种不同的应用场景)如下：
-1、CSerial
-2、CSerialEx
-3、CSerialWnd
-4、CSerialMFC
-
-具体见文章中的描述，摘录如下：
+## 关于这4个类(CSerial, CSerialEx, CSerialWnd, CSerialMFC)的描述，摘录如下：
 The current implementation contains four different classes, which allhave their own purpose. The following three classes are available. 
 • CSerial is the base serial class, which provides awrapper around the Win32 API. It is a lot easier to use, because itcombines all relevant calls in one single class. It allows theprogrammer to mix overlapped and non-overlapped calls, providesreasonable default settings, better readability, etc, etc. 
 • CSerialEx adds an additional thread to the serialclass, which can be used to handle the serial events. This releasesthe main GUI thread from the serial burden. The main disadvantageof this class is that it introduces threading to your architecture,which might be hard for some people. 
@@ -32,4 +25,6 @@ The CSerialEx adds another thread to the serial object.This frees the main threa
 GUI applications, which want to use the event-driven programming modelfor serial communications should use CSerialWnd. It is alittle less efficient, but the performance degradation is minimalif you read the port efficiently. Because it fits perfectly in theevent-driven paradigm the slight performance degradation is a minimalsacrifice. Note that you can use CSerial in GUI basedapplications (even MFC/WTL based), but then you might block themessage pump. This is, of course, bad practice in in a commercialapplication (blocking the message pump hangs the application from theuser's point of view for a certain time). As long as you know what theimpact is of blocking the message pump, you can decide for yourself ifit is acceptable in your case (could be fine for testing). 
 
 MFC application should use the CSerialMFC wrapper ifthey want to pass CWnd pointers instead of handles. Because thiswrapper is very thin you can also choose to use CSerialWnd directly. 
+
+## 代码示例，参见Serial_demo/Serial目录下的HelloWorld、Listener、Overlapped、SerialTestMFC这4个例子，另外Serial目录里面是CSerial, CSerialEx, CSerialWnd, CSerialMFC这4个串口类的具体实现文件。
 
