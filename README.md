@@ -1,6 +1,5 @@
 # A-Simple-Serial-library-for-CPlusPlus
-A high-performance, complete and compact serial library for C++
-[https://www.codeproject.com/Articles/992/Serial-library-for-C](https://www.codeproject.com/Articles/992/Serial-library-for-C)
+[A high-performance, complete and compact serial library for C++](https://www.codeproject.com/Articles/992/Serial-library-for-C)
 
 
 ## 本仓库来源于[CodeProjecct](https://www.codeproject.com)作者[Ramon de Klein](https://www.codeproject.com/script/Membership/View.aspx?mid=10041)的一篇关于C++串口库的文章，是17年前也就是2003年很老的一篇文章，使用C++的串口类实现和封装，有4个类(支持4种不同的应用场景)如下：
